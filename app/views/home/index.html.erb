@@ -1,0 +1,14 @@
+<h1>Home</h1>
+
+<%= form_tag login_path do %>
+  <%= label_tag(:domain, "Domain:") %>
+  <%= text_field_tag(:domain) %>
+  <br>
+  <%= label_tag(:username, "User name:") %>
+  <%= text_field_tag(:username) %>
+  <br>
+  <%= label_tag(:password, "Password:") %>
+  <%= text_field_tag(:password) %>
+  <br>
+  <%= submit_tag("Login") %>
+<% end %>
